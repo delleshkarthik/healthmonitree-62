@@ -1,69 +1,52 @@
-# Welcome to your Lovable project
+# HealthMonitree - AI-Powered Healthcare Monitoring System
 
-## Project info
+## Overview
+HealthMonitree is an AI-powered healthcare web application designed to provide real-time health monitoring and assistance. This platform leverages advanced AI analysis, patient records management, emergency SOS features, and real-time health tracking to enhance patient care and accessibility. The application also integrates DevOps methodologies for continuous deployment, scalability, and reliability.
 
-**URL**: https://lovable.dev/projects/178bb7d6-3b35-411d-a6eb-779968c028c7
+## Features
+- **AI-Powered Health Analysis**: Users can upload images and use voice or text queries to get AI-driven disease detection and recommended treatments.
+- **Patient Records Management**: Securely store and retrieve patient history, including previous diagnoses and medical visits.
+- **Real-Time Health Monitoring**: Tracks patient activity such as sleep patterns, step count, calorie intake, and diet recommendations.
+- **Emergency SOS with GPS Integration**: Users can send SOS alerts with real-time location using Mapbox API.
+- **Medication Reminders**: Personalized notifications for medicine intake based on prescriptions.
 
-## How can I edit this code?
+## DevOps Implementation
+### 1️⃣ Version Control
+- Code is hosted on GitHub for collaborative development and tracking.
 
-There are several ways of editing your application.
+### 2️⃣ CI/CD Pipeline
+- **GitHub Actions / Jenkins**: Automated build, test, and deployment pipeline.
+- **Docker**: Containerized application for seamless deployment.
+- **Kubernetes (Optional)**: For managing containerized workloads at scale.
 
-**Use Lovable**
+### 3️⃣ Infrastructure as Code (IaC)
+- **Terraform / AWS CloudFormation**: Automating infrastructure provisioning.
+- **AWS EC2**: Hosting the application with auto-scaling capabilities.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/178bb7d6-3b35-411d-a6eb-779968c028c7) and start prompting.
+### 4️⃣ Monitoring and Logging
+- **Prometheus & Grafana**: Real-time performance monitoring and visualization.
+- **ELK Stack (Elasticsearch, Logstash, Kibana)**: Centralized logging for debugging and analysis.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 5️⃣ Security Measures
+- **Role-Based Access Control (RBAC)**: Ensuring secure access to medical data.
+- **HTTPS & SSL Encryption**: Data protection during transmission.
+- **Regular Security Scans**: Using DevSecOps tools for vulnerability detection.
 
-**Use your preferred IDE**
+## Technologies Used
+- **Frontend**: React.js / Next.js
+- **Backend**: Node.js / Express.js
+- **Database**: MongoDB / PostgreSQL
+- **AI Model**: Integrated with Groq API for AI-driven health analysis
+- **DevOps Tools**: Docker, Kubernetes, GitHub Actions, Terraform, AWS, Prometheus, ELK Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Installation & Deployment
+### Prerequisites
+- Docker installed (`docker --version`)
+- Node.js installed (`node -v`)
+- AWS CLI configured (`aws configure`)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/178bb7d6-3b35-411d-a6eb-779968c028c7) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+### Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/YourUsername/HealthMonitree.git
+   cd HealthMonitree
